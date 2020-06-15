@@ -3,12 +3,6 @@
     max-width: 1300px;
     margin: auto;
 }
-.t{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 100px;
-}
 .m{
 	min-width: 400px;
 	padding: 10px;

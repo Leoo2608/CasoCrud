@@ -19,7 +19,6 @@ $("#boton").click(function(){
 			listarProducto();
 			});
 	}else{
-		alert("hola2")
 		bootbox.confirm("Desea Modificar?", function(result) {
 		if(result){
 		 	bootbox.alert("Registro Modificado Correctamente...!", function() {		
