@@ -5,17 +5,17 @@ public class Alumno {
 	private int idescuela;
 	private String nombres;
 	private String correo;
-	private String telefono;
+	private String celular;
 	public Alumno() {
 		super();
 	}
-	public Alumno(int idalumno, int idescuela, String nombres, String correo, String telefono) {
+	public Alumno(int idalumno, int idescuela, String nombres, String correo, String celular) {
 		super();
 		this.idalumno = idalumno;
 		this.idescuela = idescuela;
 		this.nombres = nombres;
 		this.correo = correo;
-		this.telefono = telefono;
+		this.celular = celular;
 	}
 	public int getIdalumno() {
 		return idalumno;
@@ -41,11 +41,11 @@ public class Alumno {
 	public void setCorreo(String correo) {
 		this.correo = correo;
 	}
-	public String getTelefono() {
-		return telefono;
+	public String getCelular() {
+		return celular;
 	}
-	public void setTelefono(String telefono) {
-		this.telefono = telefono;
+	public void setCelular(String celular) {
+		this.celular = celular;
 	}
 	
 }

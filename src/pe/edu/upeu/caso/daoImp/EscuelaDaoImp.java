@@ -43,7 +43,7 @@ public class EscuelaDaoImp implements EscuelaDao{
 	public List<Escuela> readAll() {
 		// TODO Auto-generated method stub
 		List<Escuela> list = new ArrayList<>();
-		String sql = "select *from escuela";
+		String sql = "select * from escuela";
 		try {
 			cx = Conexion.getConexion();
 			ps = cx.prepareStatement(sql);
@@ -51,7 +51,7 @@ public class EscuelaDaoImp implements EscuelaDao{
 			while(rs.next()) {
 				Escuela a = new Escuela();
 				a.setIdescuela(rs.getInt("idescuela"));
-				a.setNombre(rs.getString("nombre"));
+				a.setNombre(rs.getString("nomescuela"));
 			    list.add(a);
 			}
 			

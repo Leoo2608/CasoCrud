@@ -2,15 +2,15 @@ package pe.edu.upeu.caso.entity;
 
 public class Escuela {
 	private int idescuela;
-	private String nombre;
+	private String nomescuela;
 	
 	public Escuela() {
 		super();
 	}
-	public Escuela(int idescuela, String nombre) {
+	public Escuela(int idescuela, String nomescuela) {
 		super();
 		this.idescuela = idescuela;
-		this.nombre = nombre;
+		this.nomescuela = nomescuela;
 	}
 	public int getIdescuela() {
 		return idescuela;
@@ -18,11 +18,11 @@ public class Escuela {
 	public void setIdescuela(int idescuela) {
 		this.idescuela = idescuela;
 	}
-	public String getNombre() {
-		return nombre;
+	public String getNomescuela() {
+		return nomescuela;
 	}
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setNombre(String nomescuela) {
+		this.nomescuela = nomescuela;
 	}
 	
 	

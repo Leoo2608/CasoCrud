@@ -27,7 +27,7 @@ public class HomeController extends HttpServlet {
 	private AlumnoDao ad1 = new AlumnoDaoImp();
 	private EscuelaDao ed = new EscuelaDaoImp();
 	private Gson g = new Gson();
-	int ida, idescuela; String nom,correo,telefono;
+	int ida, idescuela; String nombres,correo,celular;
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -54,9 +54,9 @@ public class HomeController extends HttpServlet {
 		case 3: //registrar alumno
 			ad1.create(new Alumno(0,
 			Integer.parseInt(request.getParameter("escuela")),
-			request.getParameter("nom"),
+			request.getParameter("nombres"),
 			request.getParameter("correo"),
-			request.getParameter("telefono")));
+			request.getParameter("celular")));
 			out.println(g.toJson("Registro guardado correctamente"));
 			break;
 		case 4: //buscar por ID
@@ -69,10 +69,10 @@ public class HomeController extends HttpServlet {
 		case 6: //modificar alumno
 			ida = Integer.parseInt(request.getParameter("ida"));
 			idescuela = Integer.parseInt(request.getParameter("idescuela"));
-			nom = request.getParameter("nom");
+			nombres = request.getParameter("nombres");
 			correo = request.getParameter("correo");
-			telefono = request.getParameter("telefono");
-			out.println(g.toJson(ad1.update(new Alumno(ida, idescuela, nom, correo, telefono))));
+			celular = request.getParameter("celular");
+			out.println(g.toJson(ad1.update(new Alumno(ida, idescuela, nombres, correo, celular))));
 			break;
 		default:
 			break;
